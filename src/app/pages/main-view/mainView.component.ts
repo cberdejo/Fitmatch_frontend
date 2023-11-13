@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, signal } from '@angular/core';
 
-@Component({
+@Component({ 
   selector: 'app-mainView',
   templateUrl: './mainView.component.html',
   styleUrls: ['./mainView.component.css']
@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class MainViewComponent implements OnInit {
 
   constructor() { }
-
+  state = signal<'main' | 'login' | 'register'>('main');
   ngOnInit() {
   }
 
