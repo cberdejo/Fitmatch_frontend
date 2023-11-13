@@ -11,5 +11,12 @@ export class MainViewComponent implements OnInit {
   state = signal<'main' | 'login' | 'register'>('main');
   ngOnInit() {
   }
+  onRegister() {
+
+  }
+
+  onLogin(){
+    
+  }
 
 }

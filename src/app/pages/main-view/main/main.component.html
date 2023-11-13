@@ -1,3 +1,162 @@
-<p>
-  main works
-</p>
+<div class="home-container">
+  <div class="home-header">
+    <header data-thq="thq-navbar" class="home-navbar-interactive">
+      <!-- Titulo-->
+      <span class="home-logo">
+        FIT-MATCH
+        <img
+      src="assets/images/logo.png"
+      width="40" height="40"
+      alt="logo"
+     
+      >
+      
+      </span> 
+      <!-- Foto-->
+      
+      <div class="p-d-flex p-jc-between">
+        <span (click)="goToLogin()"  style="color: blue; cursor: pointer;" > Iniciar Sesión </span> 
+       
+        <span (click)="goToRegister()"  style="color: purple; cursor: pointer;" > Registrarse </span> 
+      </div>
+    
+     
+   
+    </header>
+    
+  </div>
+  <div class="home-hero">
+    <div class="home-hero1">
+      <div class="home-container1">
+        <h1 class="home-hero-heading heading1">Encuentra tu entrenador ideal</h1>
+        <span class="home-hero-sub-heading">
+          Fit-Match: Acercamos a la comunidad con los mejores
+        </span>
+        <div class="home-btn-group">
+          <button class="home-hero-button1 button" (click)="goToLogin()">Empezar</button>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="home-details">
+    <div class="home-details1">
+      <div class="home-container2">
+        <span class="home-text sectionTitle">
+          <span>Detalles</span>
+          <br />
+        </span>
+        <h2 class="home-details-heading heading2">Porque escoger Fit-match?</h2>
+        <span class="home-details-sub-heading">
+          Fit-Match es la red social definitiva para los entusiastas del fitness. Con nuestra plataforma,
+          puedes encontrar y conectarte fácilmente con entrenadores certificados que se especializan en tus
+          metas de fitness deseadas. Ya sea que estés buscando perder peso, desarrollar músculo o mejorar tu 
+          estado físico en general, Fit-Match tiene el entrenador perfecto para ti. Únete a nuestra comunidad
+          hoy y da el primer paso hacia un estilo de vida más saludable.
+        </span>
+      </div>
+      <img
+        alt="image"
+        src="https://images.unsplash.com/photo-1538805060514-97d9cc17730c?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY5OTg5NTg0Mnw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=400"
+        class="home-details-image"
+      />
+    </div>
+  </div>
+
+  <div class="home-features">
+    <div class="home-features-container">
+      <div class="home-features1">
+        <div class="home-container3">
+          
+          <h2 class="home-features-heading heading2">
+            Encuentra a tu entrenador perfecto!
+          </h2>
+          <span class="home-details-sub-heading">
+          Experimentar una red social revolucionaria que conecta entrenadores con la comunidad para los mejroes resultados.
+          Podrás filtrar y encontrar a los mejores entrenadores según tus preferencias, ver reviews de otros usuarios y encontrar
+          el entrenador perfecto para tus objetivos al mejor precio.
+          </span>
+        </div>
+        <div class="home-container4">
+         <!-- Feature-->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="home-pricing"></div>
+  <div class="home-gallery">
+    <div class="home-gallery1">
+      <h1 class="home-gallery-heading heading2"> Galería Fit-Match </h1>
+      <span class="home-gallery-sub-heading">
+        Explora el mundo de Fit-Match
+      </span>
+      <div class="home-container5">
+        <gallery-card3
+          image_src="https://images.unsplash.com/photo-1604046767104-e53cd9f82be5?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY5OTg5NTgyNnw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=400"
+          rootClassName="rootClassName"
+        ></gallery-card3>
+        <gallery-card3
+          image_src="https://images.unsplash.com/photo-1579758629938-03607ccdbaba?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY5OTg5NTgyNnw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=400"
+          rootClassName="rootClassName1"
+        ></gallery-card3>
+        <gallery-card3
+          image_src="https://images.unsplash.com/photo-1468421870903-4df1664ac249?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY5OTg5NTgyNnw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=400"
+          rootClassName="rootClassName3"
+        ></gallery-card3>
+        <gallery-card3
+          image_src="https://images.unsplash.com/photo-1592704708371-7bf1b1a19d6f?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY5OTg5NTgyNnw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=400"
+          rootClassName="rootClassName2"
+        ></gallery-card3>
+        <gallery-card3
+          image_src="https://images.unsplash.com/photo-1517963879433-6ad2b056d712?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY5OTg5NTgyNnw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=400"
+          rootClassName="rootClassName4"
+        ></gallery-card3>
+        <gallery-card3
+          image_src="https://images.unsplash.com/photo-1591741535018-d042766c62eb?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY5OTg5NTgyNnw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=400"
+          rootClassName="rootClassName5"
+        ></gallery-card3>
+        <gallery-card3
+          image_src="https://images.unsplash.com/photo-1486218119243-13883505764c?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY5OTg5NTgyNnw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=400"
+          rootClassName="rootClassName6"
+        ></gallery-card3>
+        <gallery-card3
+          image_src="https://images.unsplash.com/photo-1452626038306-9aae5e071dd3?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY5OTg5NTgyNnw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=400"
+          rootClassName="rootClassName7"
+        ></gallery-card3>
+        <gallery-card3
+          image_src="https://images.unsplash.com/photo-1550259979-ed79b48d2a30?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY5OTg5NTgyNnw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=400"
+          rootClassName="rootClassName8"
+        ></gallery-card3>
+        <gallery-card3
+          image_src="https://images.unsplash.com/photo-1591940765155-0604537032a5?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY5OTg5NTgyNnw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=400"
+          rootClassName="rootClassName9"
+        ></gallery-card3>
+        <gallery-card3
+          image_src="https://images.unsplash.com/photo-1602192509154-0b900ee1f851?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY5OTg5NTgyNnw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=400"
+          rootClassName="rootClassName10"
+        ></gallery-card3>
+        <gallery-card3
+          image_src="https://images.unsplash.com/photo-1590556409324-aa1d726e5c3c?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY5OTg5NTgyNnw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=400"
+          rootClassName="rootClassName11"
+        ></gallery-card3>
+      </div>
+    </div>
+  </div>
+  <div class="home-banner">
+    
+  </div>
+  <div class="home-faq"></div>
+  <div class="home-footer">
+    <footer class="home-footer1">
+      <div class="home-container6">
+        <span class="home-logo2">FIT-MATCH</span>
+      
+      </div>
+      <div class="home-separator"></div>
+      <div class="home-container7">
+        <span class="home-text6">© 2023 Fitmatch, All Rights Reserved.</span>
+        
+      </div>
+    </footer>
+  </div>
+  <div class="home-container8"></div>
+</div>
