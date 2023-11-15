@@ -1,10 +1,10 @@
 <div>
   <ng-container *ngIf="state() === 'register'">
-    <app-register [state] ="state" (onRegister)="onRegister()"> </app-register> 
+    <app-register [state] ="state" (onRegister)="onRegister($event)"> </app-register> 
   </ng-container>
 
   <ng-container *ngIf="state() === 'login'">
-      <app-login [state]="state" (onLogin)="onLogin()"></app-login>
+      <app-login [state]="state" (onLogin)="onLogin($event)"></app-login>
   </ng-container>
 
   <ng-container *ngIf="state() === 'main'">
