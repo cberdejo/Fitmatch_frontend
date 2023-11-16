@@ -1,5 +1,5 @@
 import { Component, OnInit, signal } from '@angular/core';
-
+import { StateService } from 'src/app/pages/main-view/stateService/state.service';
 @Component({ 
   selector: 'app-mainView',
   templateUrl: './mainView.component.html',
@@ -7,12 +7,25 @@ import { Component, OnInit, signal } from '@angular/core';
 })
 export class MainViewComponent implements OnInit {
 
-  constructor() { }
-  state = signal<'main' | 'login' | 'register'>('main');
+  constructor(private stateService: StateService) { }
+  
+  get state (){ 
+    return this.stateService.getState();
+  }
+
   ngOnInit() {
   }
-  onRegister(eventData: any) {
 
+  goToRegister(){
+    this.stateService.setState('register');
+  }
+
+  goToLogin(){
+    this.stateService.setState('login');
+  }
+
+  onRegister(eventData: any) {
+    
   }
 
   onLogin(eventData: any){

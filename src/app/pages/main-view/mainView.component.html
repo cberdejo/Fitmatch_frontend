@@ -1,13 +1,16 @@
+
 <div>
-  <ng-container *ngIf="state() === 'register'">
-    <app-register [state] ="state" (onRegister)="onRegister($event)"> </app-register> 
+  <ng-container *ngIf="state === 'register'">
+    <app-register (onRegister)="onRegister($event)"> </app-register> 
   </ng-container>
 
-  <ng-container *ngIf="state() === 'login'">
-      <app-login [state]="state" (onLogin)="onLogin($event)"></app-login>
+  <ng-container *ngIf="state === 'login'">
+      <app-login  (onLogin)="onLogin($event)"></app-login>
   </ng-container>
 
-  <ng-container *ngIf="state() === 'main'">
-      <app-main [state]="state"></app-main> 
+  <ng-container *ngIf="state === 'main'">
+      <app-main></app-main> 
   </ng-container>
 </div>    
+
+

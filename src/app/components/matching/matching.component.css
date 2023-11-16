@@ -1,0 +1,23 @@
+.subtitle{
+    font-family: 'Roboto', sans-serif;
+    font-size: larger;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.checkbox-container {
+    column-count: 2;
+    column-gap: 10px; /* Espacio entre columnas, ajusta según tus necesidades */
+  }
+  
+.field-checkbox {
+  break-inside: avoid-column; /* Evitar que los elementos se rompan en columnas */
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 16px; /* Puedes ajustar el espaciado según tus necesidades */
+  padding-top:15px ;
+}

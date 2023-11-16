@@ -1,5 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
-
+import { Component, OnInit } from '@angular/core';
+import { StateService } from '../stateService/state.service';
 
 @Component({
   selector: 'app-main',
@@ -8,18 +8,20 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class MainComponent implements OnInit {
 
-  @Input () state:any;
 
-  constructor() { }
+
+  constructor(private stateService: StateService) { }
+
+
 
   ngOnInit() {
   }
   goToLogin(){
-    this.state.set('login');
+    this.stateService.setState('login');
   }
 
   goToRegister(){
-    this.state.set('register');
+    this.stateService.setState('register');
   }
-
 }
+

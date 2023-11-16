@@ -1,0 +1,61 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+
+
+
+
+  <div class="formgrid grid">
+   
+     
+    <!-- Primera fila columna 1-->
+    <div class="field col-12 md:col-6 align-items: center">
+     
+     <p-fieldset legend="Objetivos">
+        <div *ngFor="let category of categoriesObjetivos" class="field-checkbox">
+          <p-checkbox name="group" [value]="category" [(ngModel)]="selectedCategoryObjetivos" [inputId]="category.key"></p-checkbox>
+          <label [for]="category.key">{{ category.name }}</label>
+        </div>
+
+     </p-fieldset>
+      
+
+    </div>
+    <!-- Primera fila columna 2-->
+    <div class="field col-12 md:col-6">
+
+    <p-fieldset legend="Experiencia">
+      <div class="flex flex-column gap-3">
+        <div *ngFor="let category of categoriesExperience" class="field-checkbox">
+            <p-radioButton [inputId]="category.key" name="category" [value]="category" [(ngModel)]="selectedCategoryExperience"></p-radioButton>
+            <label [for]="category.key" class="ml-2">{{ category.name }}</label>
+        </div>
+      </div>
+    </p-fieldset>
+  
+      
+
+    <!--Segunda fila-->
+    
+    </div>
+    <div class="field col-12">
+     <p-fieldset legend="Interéses">
+      
+      <div class="checkbox-container">
+        <div *ngFor="let category of categoriesIntereses" class="field-checkbox">
+          <p-checkbox
+            name="group"
+            [value]="category"
+            [(ngModel)]="selectedCategoryIntereses"
+            [inputId]="category.key"
+          ></p-checkbox>
+          <label [for]="category.key">{{ category.name }}</label>
+        </div>
+      </div>
+
+     </p-fieldset>
+    </div>
+   
+  </div>
+
+  <div class="button-container">
+    <p-button [label]="label" (onClick)="mandarInfo()"  ></p-button>
+  </div>
