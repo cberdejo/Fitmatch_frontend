@@ -56,7 +56,7 @@
           <div class="p-col">
             <div class="box mb-5">
               <label for="password">Contraseña</label>
-              <span class="p-float-label"> <!-- Faltan form de contraseñas-->
+              <span class="p-float-label"> 
                 <input
                   type="password"
                   pInputText
@@ -86,7 +86,7 @@
                   formControlName="password2"
                   class="w-full"
                   name="password"
-                  placeholder="Escribe tu contraseña"
+                  
                 
                 />
               </span>
@@ -132,17 +132,26 @@
   </div>
 
   <div *ngIf="fase() === 2 ">
-    <p-card header="Confirmar correo electrónico">
-      <p-steps [model]="steps" [readonly]="false"></p-steps>
-      <br>
-      <br>
-      <!-- <app-codigoCorreo [correo]="email"></app-codigoCorreo> -->
-      <div class="button-container">
-        <p-button label="Atrás" icon="pi pi-arrow-left" (onClick)="goToFase1()" ></p-button>   
+    <p-card header="Confirmar correo electrónico" [style]="{ width: '800px', height: '500px', overflow: 'auto' }">
+      <p-steps [model]="steps" [readonly]="false"></p-steps> <br><br>
+  
+      <!-- Centro el componente app-emailVerification -->
+      <div class="text-center">
+        <app-emailVerification [email]="email.value"></app-emailVerification>  
+      </div> 
+  
+       <!-- Botones alineados a los lados en la parte inferior -->
+    <div class="text-center mt-5">
+      <div class = "inline">
+        <!-- Botón a la izquierda -->
+        <p-button label="Atrás" icon="pi pi-arrow-left" (onClick)="goToFase1()"></p-button>
       </div>
-      
+      <div class="inline ml-5">
+        <!-- Botón a la derecha -->
+        <p-button label="Siguiente" (onClick)="goToFase3()" [disabled]="!emailIsVerified"></p-button>
+      </div>
+    </div>
     </p-card>
-    <p-button label="Siguiente"  (onClick)="goToFase3()"  ></p-button>   
   </div>
   <div *ngIf="fase() === 3 ">	
    
@@ -151,19 +160,14 @@
 
     <div class="col-12">
       <p-card header="Preferencias" [style]="{ width: '800px' }">
-        <p-steps [model]="steps" [readonly]="false"></p-steps>
-        <br>
-        <br>
-        <app-matching [label]="'Siguiente'" ></app-matching>
+        <p-steps [model]="steps" [readonly]="false"></p-steps><br><br>
+
+        <app-matching [label]="'Empezar en FIT-MATCH'" ></app-matching>
         <div class="button-container">
           <p-button label="Atrás" icon="pi pi-arrow-left" (onClick)="goToFase1()"  ></p-button>   
         </div>
     </p-card>
 
-
-      
-      
-  
     </div>
     
   </div>

@@ -30,7 +30,7 @@ export class MatchingComponent implements OnInit {
     { name: 'Otros', key: 'O' },
   ];
 
-  selectedCategoryObjetivos:any[] = [];
+
 
   //categorias disponibles en checkboxes sobre Interéses
   categoriesIntereses: any [] = [
@@ -49,12 +49,21 @@ export class MatchingComponent implements OnInit {
     { name: 'Otros', key: 'O'}
   ]
 
+ 
+
+  //HACER FORM
+  validForm = false;
+  selectedCategoryObjetivos:any[] = [];
   selectedCategoryIntereses:any[] = [];
+
   constructor() { }
+
+
 
   ngOnInit() {
     this.selectedCategoryExperience = this.categoriesExperience[1];
   }
+
 
   mandarInfo(){
     this.onMandarInfo.emit({

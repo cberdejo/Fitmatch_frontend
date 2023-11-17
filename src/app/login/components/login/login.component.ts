@@ -1,6 +1,6 @@
 import { Component, OnInit,  Output, EventEmitter } from '@angular/core';
 import { FormGroup, FormControl, Validators, ValidatorFn, AbstractControl, ValidationErrors } from '@angular/forms';
-import { StateService } from '../stateService/state.service';
+import { StateService } from '../../service/stateService/state.service';
 
 @Component({
   selector: 'app-login',
@@ -15,7 +15,6 @@ export class LoginComponent implements OnInit {
   profileForm: FormGroup = new FormGroup({
     email : new FormControl('', [Validators.required, Validators.pattern("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$")]),
     password: new FormControl('',[Validators.required,]),
-   
    
   });
 

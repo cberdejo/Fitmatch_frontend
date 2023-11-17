@@ -1,5 +1,5 @@
 import { Component, OnInit, signal } from '@angular/core';
-import { StateService } from 'src/app/pages/main-view/stateService/state.service';
+import { StateService } from 'src/app/login/service/stateService/state.service';
 @Component({ 
   selector: 'app-mainView',
   templateUrl: './mainView.component.html',

@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { AdminViewComponent } from './pages/admin-view/adminView.component';
-import { ClienteViewComponent } from './pages/cliente-view/clienteView.component';
-import { EntrenadorViewComponent } from './pages/entrenador-view/entrenadorView.component';
-import { MainViewComponent } from './pages/main-view/mainView.component';
+import { AdminViewComponent } from './admin/pages/adminView.component';
+import { ClienteViewComponent } from './cliente/pages/clienteView.component';
+import { EntrenadorViewComponent } from './entrenador/entrenadorView.component';
+import { MainViewComponent } from './login/pages/mainView.component';
 
 const routes: Routes = [  
   { path: 'viewAdmin', component: AdminViewComponent },

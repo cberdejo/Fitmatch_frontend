@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { HttpClientModule } from '@angular/common/http';
 import { MessageService } from 'primeng/api';
 import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
 
@@ -15,13 +16,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RadioButtonModule } from 'primeng/radiobutton';
 import { FieldsetModule } from 'primeng/fieldset';
 import { StepsModule } from 'primeng/steps';
+import { ProgressSpinnerModule } from 'primeng/progressspinner';
+
 
 import { MainViewComponent } from './mainView.component';
-import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register/register.component';
-import { MainComponent } from './main/main.component';
-import { MatchingComponent } from 'src/app/components/matching/matching.component';
-import { GalleryCard3 } from './main/gallery-card3/gallery-card3.component';
+import { LoginComponent } from '../components/login/login.component';
+import { RegisterComponent } from '../components/register/register.component';
+import { MainComponent } from '../components/main/main.component';
+import { MatchingComponent } from 'src/app/shared/components/matching/matching.component';
+import { GalleryCard3 } from '../components/gallery-card3/gallery-card3.component';
+import { EmailVerificationComponent } from '../../shared/components/emailVerification/emailVerification.component';
 
 @NgModule({
   imports: [
@@ -38,9 +42,21 @@ import { GalleryCard3 } from './main/gallery-card3/gallery-card3.component';
     BrowserAnimationsModule,
     RadioButtonModule,
     FieldsetModule,
-    StepsModule
+    StepsModule,
+    ProgressSpinnerModule,
+    HttpClientModule
   ],
-  declarations: [MainViewComponent, LoginComponent, RegisterComponent, MainComponent, GalleryCard3, MainComponent, MatchingComponent],
+  declarations: [
+    MainViewComponent,
+    LoginComponent,
+    RegisterComponent,
+    MainComponent,
+    GalleryCard3,
+    MainComponent,
+    MatchingComponent,
+    EmailVerificationComponent,
+  ],
+
 
   exports: [MainViewComponent],
   providers: [MessageService],

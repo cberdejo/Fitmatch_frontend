@@ -25,3 +25,8 @@ header{
   align-items: center;
   padding: 0 16px; /* Puedes ajustar el espaciado según tus necesidades */
 }
+.contianer-loading{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}

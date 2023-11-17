@@ -3,10 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MainViewModule } from './pages/main-view/mainView.module';
-import { AdminViewModule } from './pages/admin-view/adminView.module';
-import { ClienteViewModule } from './pages/cliente-view/clienteView.module';
-import { EntrenadorViewModule } from './pages/entrenador-view/entrenadorView.module';
+import { MainViewModule } from './login/pages/mainView.module';
+import { AdminViewModule } from './admin/adminView.module';
+import { ClienteViewModule } from './cliente/pages/clienteView.module';
+import { EntrenadorViewModule } from './entrenador/entrenadorView.module';
 @NgModule({
   declarations: [
     AppComponent

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AdminViewComponent } from './adminView.component';
+import { AdminViewComponent } from './pages/adminView.component';
 
 @NgModule({
   imports: [

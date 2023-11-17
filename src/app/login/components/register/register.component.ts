@@ -1,6 +1,6 @@
 import { Component, OnInit,  Output, EventEmitter, signal } from '@angular/core';
 import { FormGroup, FormControl, Validators, ValidatorFn, AbstractControl, ValidationErrors } from '@angular/forms';
-import { StateService } from '../stateService/state.service';
+import { StateService } from '../../service/stateService/state.service';
 import { MessageService } from 'primeng/api';
 
 
@@ -74,7 +74,7 @@ export class RegisterComponent implements OnInit {
   maxDate = new Date();
 
   //fase del registro
-  fase = signal < 1 | 2 | 3  > (1);
+  fase = signal < 1 | 2 | 3  > (3);
    
  //steps
 
@@ -97,6 +97,8 @@ export class RegisterComponent implements OnInit {
   ]
 
    
+  //email verified
+  emailIsVerified=false;
 
 
   constructor(

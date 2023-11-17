@@ -57,5 +57,5 @@
   </div>
 
   <div class="button-container">
-    <p-button [label]="label" (onClick)="mandarInfo()"  ></p-button>
+    <p-button [label]="label" (onClick)="mandarInfo()" [disabled]="!validForm"  ></p-button>
   </div>
